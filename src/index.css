@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family:'kadwa',Times;
+  height: 100vh;
+}
+:root {
+  line-height: 1.5;
+  --primary-color: #C7B484;
+  --secondary-color: #EDE9DD;
+  --accent-color: #E3F0AF;
+  --btn-background: #8BE275;
+  --text-color: #000000;
+}
+
