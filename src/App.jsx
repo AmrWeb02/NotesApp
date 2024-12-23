@@ -12,15 +12,14 @@ import Layout from './Layout/Layout.jsx'
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-      <Route index element={<AllNotes/>}></Route>
-      <Route path='/ArchivedNotes' element={<ArchivedNotes/>}></Route>
+      <Route index element={<AllNotes/>}/>
+      <Route path='/ArchivedNotes' element={<ArchivedNotes/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Route>
   ))
   return (
     <>
     <RouterProvider router={router}/>
-    <h1>All Notes</h1>
     </>
   )
 }

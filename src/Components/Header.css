@@ -1,0 +1,32 @@
+.header-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.header-container >h1{
+    align-self: center;
+}
+.search-box{
+    position:relative;
+    line-height: 100px;
+}
+.header-container input[type="text"]{
+    align-self: center;
+    width: 250px;
+    background: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+@media (max-width:768px){
+    .header-container .search-box{
+        display: none;
+    }
+    .header-container img{
+        display: block !important;
+    }
+    .header-container h1{
+        display: none;
+    }
+}
