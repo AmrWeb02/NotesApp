@@ -1,0 +1,12 @@
+{
+    "notes": [
+        {
+            "id":1,
+            "title": "Daily Training",
+            "content": "Program:\n- Bicep Curl Dumbbell: 3 sets 15KG\n- Hammer Curl: 3 sets 17.5KG\n- Triceps Pushdown Cable: 3 sets\n- Pull-Ups: 3 sets (20 reps)",
+            "tag": "Exercise",
+            "date": "2025-01-10",
+            "archived": false
+        }
+    ]
+}
