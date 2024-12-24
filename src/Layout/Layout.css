@@ -2,31 +2,35 @@
     height: 100vh;
     display: grid;
     grid-template-areas: "sidebar header header header header header"
-                         "sidebar main-content main-content main-content main-content main-content"
-                         "sidebar main-content main-content main-content main-content main-content"
-                         "sidebar main-content main-content main-content main-content main-content"
-                         "sidebar main-content main-content main-content main-content main-content"
+                         "sidebar notes-list main-content main-content main-content main-content"
+                         "sidebar notes-list main-content main-content main-content main-content"
+                         "sidebar notes-list main-content main-content main-content main-content"
+                         "sidebar notes-list main-content main-content main-content main-content"
 
     ;
-    grid-template-columns: 260px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 260px 250px 1fr 1fr 1fr 1fr;
     grid-auto-rows: 100px 1fr 1fr 1fr 1fr;
 }
 .sidebar{
     grid-area: sidebar;
-    background-color: aquamarine;
+    background-color: #C7B484;
     border-right: 1px solid black;
+}
+.notes-list{
+    grid-area: notes-list;
+    background-color: aqua;
 }
 .header{
     grid-area: header;
-    background-color: aqua;
+    background-color: #C7B484;
 }
 .main-content{
     grid-area: main-content;
-    background-color: aliceblue;
+    background-color: #a39c89;
 }
 .footer{
     grid-area:footer;
-    background-color: rgb(75, 77, 78);
+    background-color: #C7B484;
     display: none;
 }
 .note-list{
@@ -50,5 +54,8 @@
     }
     .sidebar{
         display: none;
+    }
+    .notes-list{
+        display: none !important;
     }
 }

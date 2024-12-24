@@ -7,6 +7,14 @@
             "tag": "Exercise",
             "date": "2025-01-10",
             "archived": false
-        }
+        },
+        {
+            "id": 2,
+            "title": "Second Note",
+            "content": "This is the second note",
+            "tags": "personal",
+            "date": "2024-01-15",
+            "archived": true
+          }
     ]
 }

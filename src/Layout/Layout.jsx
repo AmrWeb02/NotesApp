@@ -6,6 +6,7 @@ import './Layout.css'
 import Header from '../Components/Header.jsx'
 import Sidebar from '../Components/Sidebar.jsx'
 import Footer from '../Components/Footer.jsx'
+import NoteDetails from '../Components/NoteDetails.jsx'
 
 const Layout = () => {
   return (
@@ -17,9 +18,12 @@ const Layout = () => {
       <aside className="sidebar">
         <Sidebar/>
       </aside>
+      <div className="notes-list" style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
+        <Outlet/>
+        {/*In the outlet we will render Either AllNotes or ArchivedNotes  that will depend on the URL} */}
+      </div>
       <main className='main-content'>
-      <Outlet/>
-      {/* In the outlet we will render Either (AllNotes + NoteDetails) or (ArchivedNotes + NoteDetails) that will depend on the URL this is why we don't include them here and count on main-content as placeholder for them */}
+        <NoteDetails/>
       </main>
       <footer className='footer'>
         <Footer/>

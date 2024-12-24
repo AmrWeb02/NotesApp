@@ -1,0 +1,16 @@
+.new-btn{
+    width: 200px;
+    margin:28px 0px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: #8BE275;
+    border:none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+.new-btn:hover{
+    cursor: pointer;
+    background-color: #5DB996;
+}

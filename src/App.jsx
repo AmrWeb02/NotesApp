@@ -3,9 +3,9 @@ import './App.css'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
 
 // Pages
-import AllNotes from './Pages/AllNotes.jsx'
-import ArchivedNotes from './Pages/ArchivedNotes.jsx'
-import NotFound from './Pages/NotFound.jsx'
+import AllNotes from './Components/AllNotes.jsx'
+import ArchivedNotes from './Components/ArchivedNotes.jsx'
+import NotFound from './Components/NotFound.jsx'
 // Layouts
 import Layout from './Layout/Layout.jsx'
 
