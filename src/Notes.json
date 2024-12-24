@@ -9,7 +9,15 @@
             "archived": false
         },
         {
-            "id": 2,
+            "id":2,
+            "title": "Fishing",
+            "content": "Hunt Tuna Fish",
+            "tag": "Sports",
+            "date": "2022-06-15",
+            "archived": false
+        },
+        {
+            "id": 3,
             "title": "Second Note",
             "content": "This is the second note",
             "tags": "personal",
