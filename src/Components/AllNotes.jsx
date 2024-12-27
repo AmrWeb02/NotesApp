@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import NoteCard from './NoteCard.jsx'
 import BtnNew from './BtnNew.jsx'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, useOutletContext } from 'react-router-dom'
 const AllNotes = () => {
+  const {NoteSelectHandler} = useOutletContext();
   const NotesData = useLoaderData();
   const NotesArray = Array.from(NotesData);
   return (
@@ -10,7 +11,7 @@ const AllNotes = () => {
 
     <BtnNew/>
     {
-      NotesArray.map((note)=> <NoteCard key={note.title} note={note}/>)
+      NotesArray.map((note)=> <NoteCard key={note.title} note={note} onClick={ ()=>{ NoteSelectHandler(note) } }/>)
     }
     </>
   )

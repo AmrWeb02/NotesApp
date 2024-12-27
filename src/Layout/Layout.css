@@ -18,7 +18,7 @@
 }
 .notes-list{
     grid-area: notes-list;
-    background-color: aqua;
+    background-color: #27231b;
 }
 .header{
     grid-area: header;
@@ -26,7 +26,7 @@
 }
 .main-content{
     grid-area: main-content;
-    background-color: #a39c89;
+    background-color: #EDE9DD;
 }
 .footer{
     grid-area:footer;
@@ -38,6 +38,7 @@
 }
 .note-details{
     grid-area: NoteDetails;
+    padding: 25px;
 }
 @media (max-width:768px){
     .grid-container{

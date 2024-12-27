@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Outlet } from 'react-router-dom'
 // Styles and Grid Control
 import './Layout.css'
@@ -9,6 +9,11 @@ import Footer from '../Components/Footer.jsx'
 import NoteDetails from '../Components/NoteDetails.jsx'
 
 const Layout = () => {
+  const [selectedNote, setSelectedNote] = useState(null);
+  // This function will be passed to all NoteCard components, it takes 1 paramter (Notes data), updates state variable, we then use whatever value in this state inside Details Component
+  const NoteSelectHandler = (note) =>{
+    setSelectedNote(note);
+  }
   return (
     <>
     <div className="grid-container">
@@ -19,11 +24,11 @@ const Layout = () => {
         <Sidebar/>
       </aside>
       <div className="notes-list" style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
-        <Outlet/>
+        <Outlet context={{NoteSelectHandler}}/>
         {/*In the outlet we will render Either AllNotes or ArchivedNotes  that will depend on the URL} */}
       </div>
       <main className='main-content'>
-        <NoteDetails/>
+        {selectedNote ? <NoteDetails noteData={selectedNote}/> :<h1>Select a note</h1>}
       </main>
       <footer className='footer'>
         <Footer/>

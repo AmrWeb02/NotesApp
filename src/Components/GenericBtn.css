@@ -1,0 +1,16 @@
+.generic-btn{
+    width: 130px;
+    margin:15px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #8BE275;
+    border:none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+.generic-btn:hover{
+    cursor: pointer;
+    background-color: #5DB996;
+}
