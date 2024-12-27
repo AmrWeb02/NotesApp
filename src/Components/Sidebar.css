@@ -12,14 +12,14 @@ aside a{
     width: 220px;
     margin: 12px auto;
     text-decoration: none;
-    background-color: white;
+    background-color: #1ABC9C;
     padding: 10px 20px;
     border-radius: 10px;
     color:black;
     transition: all 0.5s ease;
 }
 aside a:hover{
-    background-color: #5DB996;
+    background-color: #16A085;
 }
 aside a.active{
     background-color: #5DB996;
@@ -32,6 +32,10 @@ li{
 }
 .tag-item{
     margin: 20px 0;
+    background-color: #3e566f;
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
 }
 .tag-btn{
     background-color: transparent;
@@ -40,6 +44,7 @@ li{
     align-items: center;
     gap:10px;
     transition: all 0.5s ease;
+    color: #ffffff;
 }
 .tag-btn:hover{
     cursor: pointer;

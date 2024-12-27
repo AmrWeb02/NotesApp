@@ -5,7 +5,7 @@ const TagsList = () => {
   return (
    <>
    <div style={{paddingLeft:"22px"}}>
-   <h3 style={{paddingTop:"30px"}}>Tags</h3>
+   <h3 style={{paddingTop:"30px", color: "#ffffff",}}>Tags</h3>
    <ul>
     <li className="tag-item">
         <button className="tag-btn"><FaTag/>Exercise</button>

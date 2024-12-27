@@ -13,20 +13,20 @@
 }
 .sidebar{
     grid-area: sidebar;
-    background-color: #C7B484;
+    background-color: #264767;
     border-right: 1px solid black;
 }
 .notes-list{
     grid-area: notes-list;
-    background-color: #27231b;
+    background-color: #F7F8FA;
 }
 .header{
     grid-area: header;
-    background-color: #C7B484;
+    background-color: #264767;
 }
 .main-content{
     grid-area: main-content;
-    background-color: #EDE9DD;
+    background-color: #F7F8FA;
 }
 .footer{
     grid-area:footer;
